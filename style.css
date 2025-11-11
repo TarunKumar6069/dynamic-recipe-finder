@@ -1,0 +1,163 @@
+:root {
+    /* Updated color palette for a warmer "food" feel */
+    --bg-color: #fffaf7; /* A very light, warm cream */
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --primary-color: #e63946; /* A strong, warm red */
+    --primary-hover: #d62828; /* A darker red for hover */
+    --border-color: #eeeeee; /* Lighter border */
+    --shadow: 0 6px 16px rgba(0,0,0,0.07); /* Softer, more modern shadow */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    /* Added 1rem side padding for better mobile feel */
+    padding: 2rem 1rem;
+    line-height: 1.6;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-container {
+    text-align: center;
+}
+
+.app-container h1 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2.5rem; /* Made title a bit bigger */
+    margin-bottom: 1.5rem;
+}
+
+/* Search Form styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    /* Updated focus shadow to match new color */
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.25);
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Added 'all' to transition for a smoother hover effect */
+    transition: all 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: var(--primary-hover);
+    /* Added a subtle grow effect on hover */
+    transform: scale(1.02);
+}
+
+/* Loading and Error Messages */
+.message-center {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: 2rem;
+}
+
+/* Recipe Grid (Responsive) */
+.recipe-grid {
+    display: grid;
+    /* Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Recipe Card */
+.recipe-card {
+    background-color: var(--card-bg);
+    /* Increased border-radius for a softer, more modern look */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+    /* Added a subtle border */
+    border: 1px solid var(--border-color);
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.recipe-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    /* Changed from green to our new primary red */
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.recipe-link:hover {
+    /* Changed from green to our new primary red hover */
+    background-color: var(--primary-hover);
+}
+
+/* Added a credit for the API */
+.api-credit {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.api-credit a {
+    color: #888;
+    text-decoration: none;
+}
+.api-credit a:hover {
+    text-decoration: underline;
+}
