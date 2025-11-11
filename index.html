@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-      <a href="recipes/kadai_paneer.html">Kadhai Paneer</a>
-      <a href="recipes/hyderabadi_biryani.html">Hyderabadi Biryani</a>
-      <a href="recipes/Masal_Dosa.html">Masala Dosa</a>
-    </ul>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Recipe Finder</title>
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load React & Babel (for JSX) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+<body>
+    <!-- This is where our React App will be mounted -->
+    <div id="root"></div>
+
+    <!-- This is the correct way: Link the external JS file -->
+    <!-- type="text/babel" tells Babel to translate this file -->
+    <script type="text/babel" src="app.js"></script>
+</body>
 </html>
