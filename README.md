@@ -60,9 +60,3 @@ Responsive Styling
 All styling is in the style.css file. A responsive
 grid-template-columns is used for the recipe list, which automatically
 changes from 3 columns on a desktop to 1 column on a mobile phone.
-
-Run Locally (Requires a Server)
-
-Because browsers block API requests from local files (file:///...), you cannot just double-click index.html.
-You must use a simple local server. If you have VS Code, you can install the "Live Server" extension.
-Right-click index.html and choose "Open with Live Server." This will open it on a local URL (like http://127.0.0.1:5500) and everything will work.
