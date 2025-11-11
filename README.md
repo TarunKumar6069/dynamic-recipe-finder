@@ -61,16 +61,6 @@ All styling is in the style.css file. A responsive
 grid-template-columns is used for the recipe list, which automatically
 changes from 3 columns on a desktop to 1 column on a mobile phone.
 
-How to Run This Project
-
-This project is structured with separate HTML, CSS, and JS files.
-
-Deploy to a Server (Recommended)
-
-Upload the index.html, style.css, and app.js files to your GitHub repository.
-Connect your GitHub repository to Vercel or Netlify.
-Vercel/Netlify will deploy your project to a live URL (e.g., recipe-finder.vercel.app).
-
 Run Locally (Requires a Server)
 
 Because browsers block API requests from local files (file:///...), you cannot just double-click index.html.
